@@ -1,0 +1,80 @@
+body {
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+
+h1 {
+    text-align: center;
+}
+
+#view {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #view td, #view th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #view tr:nth-child(even){background-color: rgb(125, 224, 178);}
+  
+  #view tr:hover {background-color: #ddd;}
+  
+  #view th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: black ;
+    color: white;
+  }
+  .button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50; /* Green */
+    cursor: pointer;
+  }
+
+  .button1 {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #15317E;
+    border: none;
+    position: absolute;
+    right: 0;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 10;
+    padding: 20px;
+    width: 100px;
+    cursor: pointer; 
+    margin: 5px;
+  }
+  
+  .button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    color: white;
+  
+  }
+  
+  .button1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button1:hover span {
+    padding-right: 20px;
+  
+  }
+  
+  .button1:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

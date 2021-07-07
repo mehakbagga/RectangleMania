@@ -1,0 +1,74 @@
+body {
+    background: linear-gradient(45deg, #FC466B, #3F5EFB);
+}
+
+#heading {
+    font-size: 50px;
+    text-align: center;
+}
+
+#tableId {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #tableId td, #tableId th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #tableId tr:nth-child(even){background-color: rgb(125, 224, 178);}
+  
+  #tableId tr:hover {background-color: #ddd;}
+  
+  #tableId th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: black ;
+    color: white;
+  }
+  .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #15317E;
+    border: none;
+    position: absolute;
+    right: 0;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 10;
+    padding: 20px;
+    width: 100px;
+    cursor: pointer; 
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    color: white;
+  
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 20px;
+  
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
